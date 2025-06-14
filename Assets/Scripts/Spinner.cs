@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Spinner : MonoBehaviour
 {
-    [SerializeField] float rotationSpeed = 0.3f;
+    [SerializeField] float xRotationSpeed = 0.3f;
+    [SerializeField] float zRotationSpeed = 0f;
     void Start()
     {
         
@@ -10,6 +11,6 @@ public class Spinner : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(new Vector3(0, rotationSpeed, 0)); // Rotate around the Y-axis
+        transform.Rotate(new Vector3(0, xRotationSpeed, zRotationSpeed)); // Rotate around the Y-axis
     }
 }
