@@ -6,6 +6,7 @@ public class TriggerProjectile : MonoBehaviour
     [SerializeField] GameObject projectile2;
     [SerializeField] GameObject projectile3;
     [SerializeField] GameObject projectile4;
+    
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
